@@ -23,4 +23,8 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 
+  config.before(:all) do
+    Mongoid.purge!
+  end
+
 end

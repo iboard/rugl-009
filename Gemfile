@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 require 'rbconfig'
 
 gem 'rake'
+gem 'mongoid'
 
 group :test do
   gem 'rspec'
