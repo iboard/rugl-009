@@ -6,3 +6,4 @@ Mongoid.load!(MONGO_CONFIG, APPMODE)
 
 require_relative "../app/application"
 require_relative "../app/entities/rugl_meeting"
+require_relative "../app/repositories/rugl_meeting_repository"
