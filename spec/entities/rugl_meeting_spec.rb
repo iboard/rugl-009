@@ -23,5 +23,19 @@ describe RuglMeeting do
       expect(meeting_2.date.year).to eq(2013)
     end
 
+    it ".number() store and return meeting number" do
+      expect(meeting_1.number).to eq(1)
+      expect(meeting_2.number).to eq(2)
+    end
+
+    context "with existing entries" do
+
+      it "loads from repository by number" do
+        expect( RuglMeeting.new( number: 1 ).place ).to eq("Walker Bar")
+        expect( RuglMeeting.new( number: 2 ).place ).to eq("Quasiparticle")
+      end
+
+    end
+
   end
 end
