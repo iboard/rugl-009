@@ -39,8 +39,9 @@ in place.
 
   * [Mongo DB](http://mongodb.org)
   * [Mongo ID](http://mongoid.org)
-
+  * [Mongo Videos](http://youtu.be/ZbeilwSkt1s)
   * [Railscast](http://railscasts.com/episodes/238-mongoid)
+  *
   * [RailsApp: Rails/Device/Mongoid](http://railsapps.github.io/tutorial-rails-mongoid-devise.html)
   * [RailsApps: Rails/OAuth/Mongoid](http://railsapps.github.io/tutorial-rails-mongoid-omniauth.html)
   * [MongoDB Schema Design](http://www.mongodb.com/presentations/webinar/mongodb-schema-design-principles-and-practice)
