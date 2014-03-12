@@ -26,12 +26,16 @@ class RuglMeeting
   attr_reader :attributes
 
   def store_new_meeting
-    RuglMeetingRepository.create( attributes.merge!( number: RuglMeetingRepository.count+1 )  )
+    RuglMeetingRepository.create(
+      attributes.merge!( number: RuglMeetingRepository.count+1 )
+    )
     attributes.fetch(:number)
   end
 
   def load_by_number _number
-    HashWithIndifferentAccess.new( RuglMeetingRepository.where( number: _number ).first.attributes )
-  end
+    HashWithIndifferentAccess.new(
+      RuglMeetingRepository.where( number: _number ).first.attributes
+    )
+end
 
 end
